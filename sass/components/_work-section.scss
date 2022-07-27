@@ -1,5 +1,9 @@
 .work {
-    padding-bottom: 94px;
+    // padding-bottom: 94px;
+    
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
 
 .work__list {
@@ -30,7 +34,7 @@
 }
 
   .work__text {
-      display: flex;
+    //   display: flex;
       justify-content: center;
       align-items: center;
       height: 70px;
