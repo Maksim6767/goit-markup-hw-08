@@ -1,0 +1,201 @@
+
+/*-------Footer------------*/
+
+.footer {
+    background: $secondary-bg-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer .container {
+    display: flex;
+}
+
+.footer-logo {
+    color: $accent-text-color;
+}
+
+.details {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.footer-adress {
+    margin-bottom: 9px;
+}
+
+.foot-ad {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $accent-text-color;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $button-bg-color;
+    }
+}
+
+.contacts {
+    justify-content: flex-end;
+}
+
+.footer-contacts {
+    margin-bottom: 9px;
+}
+
+.foot-cont {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $button-bg-color;
+    }
+}
+
+.footer-contacts:nth-child(3n) {
+    margin-bottom: 0;
+}
+
+/*-------Соц сети футер------*/
+
+.footer-soc {
+    margin-right: auto;
+    padding-top: 12px;
+    margin-left: 70px;
+}
+
+.footer-soc-list {
+    display: flex;
+}
+
+.footer-soc-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $accent-text-color;
+}
+
+.footer-soc-item {
+    width: 44px;
+    height: 44px;
+    margin-left: 10px;
+
+    &:nth-child(1) {
+    margin-left: 0;
+    }
+}
+
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-soc-link {
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    color: $accent-text-color;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+
+    &:hover,
+    &:focus {
+        background-color: $button-bg-color;
+    }
+}
+
+.footer-soc-icon {
+    fill: currentColor;
+}
+
+/*----------Подпишитесь на рассылку--------------*/
+
+.footer-mailing-list {
+    margin-left: 93px;
+}
+
+.mailing-text {
+    margin-bottom: 20px;
+    padding-top: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $accent-text-color;
+}
+
+.mailing-form {
+    display: flex;
+    align-items: center;
+}
+
+.mailing-input {
+    margin-right: 12px;
+    padding-left: 16px;
+    min-width: 358px;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.mailing-button {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    padding: 10px 29px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+
+    color: $accent-text-color;
+    background-color: $button-bg-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.telegram-icon {
+    margin-left: 10px;
+    fill: $accent-text-color;
+}
