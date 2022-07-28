@@ -2,6 +2,7 @@
 @import "./utils/common";
 
 @import "./components/header";
+
 @import "./components/hero-section";
 @import "./components/benefit-section";
 @import "./components/work-section";
@@ -13,4 +14,5 @@
 @import "./components/portfolio-buttons";
 @import "./components/portfolio-projects";
 
-@import "./utils/mixin";
+// @import "./utils/mixin";
+@import "./components/mob-menu";

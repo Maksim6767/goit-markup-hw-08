@@ -21,7 +21,6 @@
    align-items: center;
    background-color: $secondary-bg-color;
    max-width: 1600px;
-   // height: 400px;
    margin-left: auto;
    margin-right: auto;
    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -29,11 +28,6 @@
    background-size: cover;
    background-position: center;
    
-   @media screen and (max-width: 768px) {
-         max-width: 488px;
-         max-height: 400px;
-      }
-
    @media screen and (min-width: 768px) {
          max-width: 768px;
          max-height: 400px;
@@ -46,12 +40,6 @@
       }
 }
 
-@media screen and (max-width: 768px) {
-   .hero-section {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-         url(../images/mobile/hero-mobile-1x-480-mino.jpg);
-   }
-
 @media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
@@ -60,7 +48,6 @@
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
          url(../images/mobile/hero-mobile-2x-960-mino.jpg);
    }
-}
 }
 
 @media screen and (min-width: 768px) {
@@ -80,13 +67,12 @@
       }
    }
 
-
 @media screen and (min-width: 1200px) {
    .hero-section {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
          url(../images/desktop/hero-desktop-1x-1600-mino.jpg);
    }
-
+}
    @media (min-device-pixel-ratio: 2),
    (-webkit-min-device-pixel-ratio: 2),
    (min-resolution: 192dpi),
@@ -96,7 +82,7 @@
             url(../images/desktop/hero-desktop-2x-3200-mino.jpg);
       }
    }
-}
+
 
 .hero-title {
    margin-top: 0;
