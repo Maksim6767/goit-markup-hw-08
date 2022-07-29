@@ -8,10 +8,41 @@
 }
 
 .footer .container {
+    // display: flex;
+
+@media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+    
+@media screen and (min-width: 1200px) {
+    // display: flex;
+    align-items: baseline;
+    }
+}
+
+.footer-wrapper {
+    margin-bottom: 60px;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+        margin-bottom: 0;
+    }
 }
 
 .footer-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: $button-bg-color;
+    text-decoration: none;
+}
+
+.footer-logospan {
     color: $accent-text-color;
 }
 
@@ -44,11 +75,11 @@
 }
 
 .contacts {
-    justify-content: flex-end;
+    // justify-content: flex-end;
 }
 
 .footer-contacts {
-    margin-bottom: 9px;
+    // margin-bottom: 9px;
 }
 
 .foot-cont {
@@ -77,13 +108,23 @@
 /*-------Соц сети футер------*/
 
 .footer-soc {
-    margin-right: auto;
-    padding-top: 12px;
+    // margin-right: auto;
+    // padding-top: 12px;
+    // margin-left: 70px;
+
+    margin-bottom: 60px;
+    text-align: center;
+    
+@media screen and (min-width: 1200px) {
+    text-align: left;
     margin-left: 70px;
+    margin-bottom: 0;
+    }
 }
 
 .footer-soc-list {
     display: flex;
+    justify-content: center;
 }
 
 .footer-soc-title {
@@ -139,7 +180,19 @@
 /*----------Подпишитесь на рассылку--------------*/
 
 .footer-mailing-list {
+    // margin-left: 93px;
+
+    text-align: center;
+    
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 450px;
+    }
+    
+@media screen and (min-width: 1200px) {
+    text-align: left;
     margin-left: 93px;
+    margin-bottom: 0;
+    }
 }
 
 .mailing-text {
@@ -154,12 +207,15 @@
 }
 
 .mailing-form {
-    display: flex;
-    align-items: center;
+    @media screen and(min-width: 1200px) {
+            display: flex;
+            align-items: center;
+        }
 }
 
 .mailing-input {
     margin-right: 12px;
+    margin-bottom: 20px;
     padding-left: 16px;
     min-width: 358px;
     height: 50px;
@@ -175,11 +231,21 @@
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
     }
+
+@media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
 }
 
 .mailing-button {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+
     width: 200px;
     padding: 10px 29px;
     font-weight: 700;

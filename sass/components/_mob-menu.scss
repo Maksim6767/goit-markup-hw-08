@@ -30,18 +30,20 @@
     position: absolute;
     top: 10px;
     right: 15px;
+    padding: 0;
 
     width: 40px;
     height: 40px;
+    justify-content: center;
 
     border: 0;
     background-color: transparent;
+    // background-color: greenyellow;
 
     &:hover,
     &:focus {
         fill: $button-bg-color;
     }
-
 }
 
 .mob-menu {
@@ -50,7 +52,7 @@
     justify-content: space-between;
 
     position: fixed;
-    // z-index: 2;
+    z-index: 2;
     top: 0;
     left: 0;
     padding-top: 48px;

@@ -50,17 +50,16 @@
 <button type="button" class="menu-open-btn">
     <svg width="24" height="16">
         <use class="icon-menu" href="./images/icons.svg#icon-burger"></use>
-
     </svg>
 </button>
+
 <div class="mob-menu is-hidden">
     <div class="mobmenu-container">
         <button type="button" class="close-open-btn">
-            <svg width="19" height="19">
+            <svg  width="30" height="30">
                 <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
             </svg>
         </button>
-
 
         <div class="mob-menu-top">
             <ul class="mob-menu-list">
@@ -156,7 +155,11 @@
         <h2 class="work__title">Чем мы занимаемся</h2>
     <ul class="work__list">
         <li>
-            <a href="" class="work__box"><img src="./images/comp.jpg" alt="Вводит с клавиатуры" width="370" height="294">
+            <a href="" class="work__box"><img 
+                srcset="./images/desktop/pc-desktop-1x-370-mino.jpg 1x,
+                    ./images/desktop/pc-desktop-2x-740-mino.jpg 2x"
+                src="./images/desktop/pc-desktop-1x-370-mino.jpg 1x" 
+                alt="Вводит с клавиатуры" width="370"/>
         <div class="work__tab">
             <p class="work__text">Десктопные приложения</p>
         </div>
@@ -164,7 +167,11 @@
         </li>
         
         <li>
-            <a href="" class="work__box"><img src="./images/mob.jpg" alt="Вводит с мобилки" width="370" height="294">
+            <a href="" class="work__box"><img 
+                srcset="./images/desktop/mob-desktop-1x-370-mino.jpg 1x,
+                    ./images/desktop/mob-desktop-2x-740-mino.jpg 2x"
+                src="./images/desktop/mob-desktop-1x-370-mino.jpg 1xg" 
+                alt="Вводит с мобилки" width="370"/>
             <div class="work__tab">
                 <p class="work__text">Мобильные приложения</p>
             </div>
@@ -172,7 +179,11 @@
         </li>
 
         <li>
-            <a href="" class="work__box"><img src="./images/planshet.jpg" alt="Вводит с планшета" width="370" height="294">
+            <a href="" class="work__box"><img 
+                srcset="./images/desktop/design-desktop-1x-370-mino.jpg 1x,
+                    ./images/desktop/design-desktop-2x-740-mino.jpg 2x"
+                src="./images/desktop/design-desktop-1x-370-mino.jpg 1x" 
+                alt="Вводит с планшета" width="370"/>
         <div class="work__tab">
             <p class="work__text">Дизайнерские решения</p>
         </div>
@@ -190,7 +201,24 @@
         
         <ul class="team__list">
             <li class="photo-boxes photo-boxes__item">
-                <img class="img" src="./images/photo1.jpg" alt="Фото Игоря Демьяненко" width="270" height="260">
+                <picture>
+                    <source
+                    srcset="./images/desktop/igor-desktop-1x-270-mino.jpg 1x,
+                    ./images/desktop/igor-desktop-2x-540-mino.jpg 2x" 
+                    media="(min-width: 1200px)"/>
+                    <source
+                    srcset="./images/tablet/igor-tablet-1x-354-mino.jpg 1x,
+                    ./images/tablet/igor-tablet-2x-708-mino.jpg 2x"
+                    media="(min-width: 768px)"/>
+                    <source 
+                    srcset="./images/mobile/igor-mobile-1x-450-mino.jpg 1x,
+                    ./images/mobile/igor-mobile-2x-900-mino.jpg 2x" 
+                    media="(min-width: 480px)"/>
+                <img class="img" 
+                src="./images/mobile/igor-mobile-1x-450-mino.jpg" 
+                alt="Фото Игоря Демьяненко" width="270">
+                </picture>
+
                 <div class="team-description">
                     <h3 class="name">Игорь Демьяненко</h3>
                     <p class="job-title">Product Designer</p>
@@ -231,7 +259,24 @@
             </li>
                     
             <li class="photo-boxes photo-boxes__item">
-                <img class="img" src="./images/photo2.jpg" alt="Фото Ольги Репиной" width="270" height="260">
+                <picture>
+                    <source 
+                    srcset="./images/desktop/olga-desktop-1x-270-mino.jpg 1x,
+                    ./images/desktop/olga-desktop-2x-540-mino.jpg 2x" 
+                    media="(min-width: 1200px)"/>
+                    <source 
+                    srcset="./images/tablet/olga-tablet-1x-354-mino.jpg 1x,
+                    ./images/tablet/olga-tablet-2x-708-mino.jpg 2x" 
+                    media="(min-width: 768px)"/>
+                    <source 
+                    srcset="./images/mobile/olga-mobile-1x-450-mino.jpg 1x,
+                    ./images/mobile/olga-mobile-2x-900-mino.jpg 2x" 
+                    media="(min-width: 480px)"/>
+                    <img class="img" 
+                    src="./images/mobile/olga-mobile-1x-450-mino.jpg" 
+                    alt="Фото Ольги Репиной" width="270"/>
+                </picture>
+                
             <div class="team-description">
                 <h3 class="name">Ольга Репина</h3>
                 <p class="job-title">Frontend Developer</p>
@@ -272,7 +317,24 @@
             </li>
             
             <li class="photo-boxes photo-boxes__item">
-                <img class="img" src="./images/photo3.jpg" alt="Фото Николая Тарасова" width="270" height="260">
+                <picture>
+                    <source 
+                    srcset="./images/desktop/mikola-desktop-1x-270-mino.jpg 1x,
+                    ./images/desktop/mikola-desktop-2x-540-mino.jpg 2x" 
+                    media="(min-width: 1200px)"/>
+                    <source 
+                    srcset="./images/tablet/mikola-tablet-1x-354-mino.jpg 1x,
+                    ./images/tablet/mikola-tablet-2x-708-mino.jpg 2x" 
+                    media="(min-width: 768px)"/>
+                    <source 
+                    srcset="./images/mobile/mikola-mobile-1x-450-mino.jpg 1x,
+                    ./images/mobile/mikola-mobile-2x-900-mino.jpg 2x" 
+                    media="(min-width: 480px)"/>
+                    <img class="img" 
+                    src="./images/mobile/mikola-mobile-1x-450-mino.jpg" 
+                    alt="Фото Николая Тарасова" width="270"/>
+                </picture>
+
             <div class="team-description">
                 <h3 class="name">Николай Тарасов</h3>
                 <p class="job-title">Marketing</p>
@@ -314,7 +376,23 @@
             </li>
             
             <li class="photo-boxes photo-boxes__item">
-                <img class="img" src="./images/photo4.jpg" alt="Фото Михаила Ермакова" width="270" height="260">
+                <picture>
+                    <source 
+                    srcset="./images/desktop/mikhail-desktop-1x-270-mino.jpg 1x,
+                    ./images/desktop/mikhail-desktop-2x-540-mino.jpg 2x" 
+                    media="(min-width: 1200px)"/>
+                    <source 
+                    srcset="./images/tablet/mikhail-tablet-1x-354-mino.jpg 1x,
+                    ./images/tablet/mikhail-tablet-2x-708-mino.jpg 2x" 
+                    media="(min-width: 768px)"/>
+                    <source 
+                    srcset="./images/mobile/mikhail-mobile-1x-450-mino.jpg 1x,
+                    ./images/mobile/mikhail-mobile-2x-900-mino.jpg 2x" 
+                    media="(min-width: 480px)"/>
+                    <img class="img" src="./images/mobile/mikhail-mobile-1x-450-mino.jpg" 
+                    alt="Фото Михаила Ермакова" width="270"/>
+                </picture>
+
                 <div class="team-description">
                     <h3 class="name">Михаил Ермаков</h3>
                     <p class="job-title">UI Designer</p>
@@ -420,8 +498,8 @@
 <!-- Футер -->
 <footer class="footer">
     <div class="container">
-        <div>
-            <a href="" class="header-logo details">Web<span class="footer-logo">Studio</span></a>
+        <div class="footer-wrapper">
+            <a href="" class="footer-logo details">Web<span class="footer-logospan">Studio</span></a>
             <address>
                 <ul class="dot">
                     <li class="footer-adress"><a class="foot-ad" href=""> г. Киев, пр-т Леси Украинки, 26 </a></li>
@@ -557,7 +635,7 @@
 </div>
 
 <script src="./js/modal.js"></script>
-
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
 
