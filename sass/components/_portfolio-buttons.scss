@@ -1,16 +1,42 @@
 .btn {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     justify-content: center;
+
+    @media screen and (max-width: 767px) {
+        margin-top: -15px;
+        }
+    
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        }
+    
+     @media screen and (min-width: 768px) and (max-width: 1199px) {
+         margin-bottom: 30px;
+        }
+    
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        }
 }
 
 .item-button {
-    align-items: center;
+    // align-items: center;
     background-color: $team-bg-color;
     
     & + & {
     margin-left: 8px;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-top: 15px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 
@@ -20,6 +46,7 @@
     border-radius: 4px;
     min-width: 73px;
     padding: 6px 22px;
+    margin-right: 8px;
     text-align: center;
     border: 1px solid;
     background-color: $title-text-color;
