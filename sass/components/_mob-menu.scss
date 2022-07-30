@@ -1,14 +1,14 @@
 .menu-open-btn {
-    margin-left: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    // margin-left: auto;
+    // margin-top: 10px;
+    // margin-bottom: 10px;
     padding: 0;
 
     width: 40px;
     height: 40px;
 
     border: 0;
-    background-color: transparent;
+    z-index: 10;
 
     &:hover,
     &:focus {
@@ -52,7 +52,7 @@
     justify-content: space-between;
 
     position: fixed;
-    z-index: 2;
+    // z-index: 99;
     top: 0;
     left: 0;
     padding-top: 48px;
