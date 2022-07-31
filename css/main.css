@@ -1542,11 +1542,14 @@ a {
 }
 
 .menu-open-btn {
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 0;
   width: 40px;
   height: 40px;
   border: 0;
-  z-index: 10;
+  background-color: transparent;
 }
 .menu-open-btn:hover, .menu-open-btn:focus {
   fill: #2196f3;
@@ -1569,12 +1572,8 @@ a {
   position: absolute;
   top: 10px;
   right: 15px;
-  padding: 0;
   width: 40px;
   height: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   border: 0;
   background-color: transparent;
 }
@@ -1594,6 +1593,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   padding-top: 48px;

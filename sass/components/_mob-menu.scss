@@ -1,14 +1,14 @@
 .menu-open-btn {
-    // margin-left: auto;
-    // margin-top: 10px;
-    // margin-bottom: 10px;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 0;
 
     width: 40px;
     height: 40px;
 
     border: 0;
-    z-index: 10;
+    background-color: transparent;
 
     &:hover,
     &:focus {
@@ -30,20 +30,18 @@
     position: absolute;
     top: 10px;
     right: 15px;
-    padding: 0;
 
     width: 40px;
     height: 40px;
-    justify-content: center;
 
     border: 0;
     background-color: transparent;
-    // background-color: greenyellow;
 
     &:hover,
     &:focus {
-        fill: $button-bg-color;
+        fill: #2196f3;
     }
+
 }
 
 .mob-menu {
@@ -52,7 +50,7 @@
     justify-content: space-between;
 
     position: fixed;
-    // z-index: 99;
+    z-index: 2;
     top: 0;
     left: 0;
     padding-top: 48px;
@@ -61,7 +59,7 @@
     width: 100vw;
     height: 100vh;
 
-    background-color: $accent-text-color;
+    background-color: #ffffff;
     overflow-y: scroll;
 
     @media screen and (min-width: 768px) {
@@ -102,15 +100,15 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
 
-    color: $title-text-color;
+    color: #212121;
 
     &:hover,
     &:focus {
-        color: $button-bg-color;
+        color: #2196f3;
     }
 
     &.active {
-        color: $button-bg-color;
+        color: #2196f3;
     }
 }
 
@@ -124,7 +122,7 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
 
-    color: $button-bg-color;
+    color: #2196f3;
 }
 
 .mob-post {
@@ -133,7 +131,7 @@
     line-height: 1.16;
     letter-spacing: 0.02em;
 
-    color: $primery-text-color;
+    color: #757575;
 }
 
 .mob-contacts-item:not(:last-child) {
@@ -167,5 +165,5 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
 
-    color: $button-bg-color;
+    color: #2196f3;
 }
