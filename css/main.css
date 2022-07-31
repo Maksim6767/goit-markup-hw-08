@@ -171,7 +171,8 @@ a {
   margin-right: 0;
 }
 
-.header-studio {
+.header-studio,
+.header-portfolio-contacts {
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -188,7 +189,10 @@ a {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.header-studio:active, .header-studio:hover, .header-studio:focus {
+.header-studio:active, .header-studio:hover, .header-studio:focus,
+.header-portfolio-contacts:active,
+.header-portfolio-contacts:hover,
+.header-portfolio-contacts:focus {
   color: #2196f3;
 }
 
@@ -212,27 +216,6 @@ a {
 }
 .current:hover::after, .current:focus::after, .current:active::after {
   opacity: 1;
-}
-
-.header-portfolio-contacts {
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  display: block;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #212121;
-  text-decoration: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-.header-portfolio-contacts:hover, .header-portfolio-contacts:focus, .header-portfolio-contacts:active {
-  color: #2196f3;
 }
 
 .contact-list {
@@ -1550,6 +1533,8 @@ a {
   height: 40px;
   border: 0;
   background-color: transparent;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
 }
 .menu-open-btn:hover, .menu-open-btn:focus {
   fill: #2196f3;
@@ -1602,6 +1587,10 @@ a {
   height: 100vh;
   background-color: #ffffff;
   overflow-y: scroll;
+}
+.mob-menu.is-hidden {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 @media screen and (min-width: 768px) {
   .mob-menu {

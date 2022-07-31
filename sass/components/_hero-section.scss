@@ -17,6 +17,7 @@
    // margin-bottom: 60px;
    // padding-top: 200px;
    // padding-bottom: 200px;
+
    text-align: center;
    align-items: center;
    background-color: $secondary-bg-color;
@@ -27,7 +28,7 @@
          url(../images/mobile/hero-mobile-1x-480-mino.jpg);
    background-size: cover;
    background-position: center;
-   
+
    @media screen and (min-width: 768px) {
          max-width: 768px;
          max-height: 400px;
