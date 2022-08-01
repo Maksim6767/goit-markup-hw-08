@@ -22,7 +22,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-    width: 528px;
+    width: 450px;
     /* задание фиксированной высоты модального окна */
     max-height: 581px;
     // height: 100;
@@ -31,6 +31,10 @@
     background-color: $accent-text-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
 }
 
 .modal-inner {
@@ -69,7 +73,7 @@
 
 .modal-title {
     display: block;
-    max-width: 448px;
+    // max-width: 448px;
     margin-bottom: 12px;
     margin-right: 0;
     font-size: 20px;
@@ -92,8 +96,9 @@
     display: block;
     margin-bottom: 4px;
     font-size: 12px;
-    line-height: 1.17;
+    line-height: 1.02;
     letter-spacing: 0.01em;
+    color: $primery-text-color;
 }
 
 .form-field-input {
@@ -131,6 +136,18 @@
     margin-bottom: 20px;
 }
 
+.form-field-condition .terms-condition-label {
+    font-size: 12px;
+    line-height: 1.02;
+    letter-spacing: 0.01em;
+    color: $primery-text-color;
+
+@media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+    }
+}
+
 .form-field-textarea {
     width: 100%;
     height: 120px;
@@ -153,8 +170,12 @@
         }
 }
 
-.form-field-condition {
-    margin-bottom: 30px;
+// .form-field-condition {
+//     margin-bottom: 30px;
+// }
+
+.terms-condition-label {
+    margin-left: 0;
 }
 
 .terms-condition-input {
@@ -207,10 +228,14 @@
     flex-shrink: 0;
     width: 15px;
     height: 15px;
-    margin-left: 13px;
+    margin-left: 0;
     margin-right: 7px;
     border-radius: 2px;
     border: 1px solid $title-text-color;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 13px;
+    }
 }
 
 .checkbox-icon {

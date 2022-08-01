@@ -128,6 +128,8 @@ a {
   color: #2196f3;
   font-family: "Raleway";
   font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
@@ -387,6 +389,11 @@ a {
 .benefits {
   padding: 60px 0;
 }
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding: 94px 0;
+  }
+}
 
 .benefit-item {
   max-width: 450px;
@@ -455,6 +462,11 @@ a {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .work {
+    padding-bottom: 94px;
+  }
+}
 
 .work__list {
   display: -webkit-box;
@@ -511,16 +523,27 @@ a {
 
 .team {
   background: #f5f4fa;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0;
+  }
 }
 
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -634,6 +657,15 @@ a {
 }
 
 /*---clients-section-*/
+.clients {
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+  }
+}
+
 .clients-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -753,9 +785,17 @@ a {
   margin-bottom: 20px;
   font-family: "Raleway";
   font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #2196f3;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .footer-logospan {
@@ -1041,13 +1081,18 @@ a {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   margin: 0;
-  width: 528px;
+  width: 450px;
   /* задание фиксированной высоты модального окна */
   max-height: 581px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal-inner {
@@ -1091,7 +1136,6 @@ a {
 
 .modal-title {
   display: block;
-  max-width: 448px;
   margin-bottom: 12px;
   margin-right: 0;
   font-size: 20px;
@@ -1118,8 +1162,9 @@ a {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.02;
   letter-spacing: 0.01em;
+  color: #757575;
 }
 
 .form-field-input {
@@ -1161,6 +1206,19 @@ a {
 .form-field-comment {
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+.form-field-condition .terms-condition-label {
+  font-size: 12px;
+  line-height: 1.02;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .form-field-condition .terms-condition-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form-field-textarea {
@@ -1211,8 +1269,8 @@ a {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-field-condition {
-  margin-bottom: 30px;
+.terms-condition-label {
+  margin-left: 0;
 }
 
 .terms-condition-input {
@@ -1277,10 +1335,15 @@ a {
       flex-shrink: 0;
   width: 15px;
   height: 15px;
-  margin-left: 13px;
+  margin-left: 0;
   margin-right: 7px;
   border-radius: 2px;
   border: 1px solid #212121;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-control {
+    margin-left: 13px;
+  }
 }
 
 .checkbox-icon {
@@ -1314,6 +1377,15 @@ a {
 .terms-condition-label a {
   color: #2196f3;
   border-bottom: 1px solid #2196f3;
+}
+
+.section {
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 
 .btn {
@@ -1420,6 +1492,7 @@ a {
   position: relative;
   margin-right: 30px;
   margin-bottom: 30px;
+  width: 450px;
 }
 @media screen and (max-width: 767px) {
   .flex-element {
@@ -1438,6 +1511,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .flex-element {
+    max-width: 370px;
     width: calc((100% - 90px) / 3);
   }
 }
@@ -1636,7 +1710,7 @@ a {
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: title-text-color;
 }
 .mob-menu-link:hover, .mob-menu-link:focus {
   color: #2196f3;
@@ -1662,7 +1736,7 @@ a {
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: primery-text-color;
 }
 
 .mob-contacts-item:not(:last-child) {

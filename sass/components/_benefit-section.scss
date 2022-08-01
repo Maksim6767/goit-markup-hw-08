@@ -1,12 +1,12 @@
 .benefits {
-   // padding-bottom: 60px;
    padding: 60px 0;
-   // margin: 0;
+   
+   @media screen and (min-width: 1200px) {
+      padding: 94px 0;
+   }
 }
 
 .benefit-item {
-   // margin-right: 30px;
-   // margin-bottom: 30px;
    max-width: 450px;
    margin: 0 0 30px 0;
    
@@ -31,7 +31,6 @@
    justify-content: center;
    align-items: center;
    margin-bottom: 30px;
-   // width: 450px;
    height: 120px;
    border-radius: 4px;
    background-color: $team-bg-color;
@@ -51,7 +50,6 @@
 }
 
  .benefits__text {
-   // width: 450px;
    font-weight: 400;
    font-size: 14px;
    line-height: 1.71;

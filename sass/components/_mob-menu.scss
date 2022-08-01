@@ -40,7 +40,7 @@
 
     &:hover,
     &:focus {
-        fill: #2196f3;
+        fill: $button-bg-color;
     }
 
 }
@@ -49,6 +49,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 
     position: fixed;
     z-index: 2;
@@ -61,7 +62,7 @@
     width: 100vw;
     height: 100vh;
 
-    background-color: #ffffff;
+    background-color: $accent-text-color;
     overflow-y: scroll;
 
     &.is-hidden {
@@ -108,15 +109,15 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
 
-    color: #212121;
+    color: title-text-color;
 
     &:hover,
     &:focus {
-        color: #2196f3;
+        color: $button-bg-color;
     }
 
     &.active {
-        color: #2196f3;
+        color: $button-bg-color;
     }
 }
 
@@ -130,7 +131,7 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
 
-    color: #2196f3;
+    color: $button-bg-color;
 }
 
 .mob-post {
@@ -139,7 +140,7 @@
     line-height: 1.16;
     letter-spacing: 0.02em;
 
-    color: #757575;
+    color: primery-text-color;
 }
 
 .mob-contacts-item:not(:last-child) {
@@ -173,5 +174,5 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
 
-    color: #2196f3;
+    color: $button-bg-color;
 }

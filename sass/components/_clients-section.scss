@@ -1,4 +1,12 @@
 /*---clients-section-*/
+.clients {
+padding: 60px 0;
+
+   @media screen and (min-width: 1200px) {
+      padding: 94px 0;
+   }
+}
+
 .clients-title {
    margin-top: 0;
    margin-bottom: 50px;
