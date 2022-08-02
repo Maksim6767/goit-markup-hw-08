@@ -54,6 +54,11 @@ a {
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (max-width: 479px) {
+  .container {
+    width: 90%;
+  }
+}
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
@@ -368,7 +373,7 @@ a {
   padding: 10px 32px;
   min-width: 200px;
   color: #ffffff;
-  background-color: #757575;
+  background-color: #2196f3;
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
@@ -1663,8 +1668,8 @@ a {
   overflow-y: scroll;
 }
 .mob-menu.is-hidden {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
