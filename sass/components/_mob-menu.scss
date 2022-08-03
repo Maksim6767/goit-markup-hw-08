@@ -74,8 +74,6 @@
     }
 }
 
-
-
 .mobmenu-container {
     display: flex;
     flex-direction: column;
@@ -106,7 +104,7 @@
 
     font-weight: 500;
     font-size: 40px;
-    line-height: 1.17;
+    line-height: 1.18;
     letter-spacing: 0.02em;
 
     color: title-text-color;
@@ -128,7 +126,7 @@
 .mob-tel {
     font-weight: 500;
     font-size: 34px;
-    line-height: 1.17;
+    line-height: 1.18;
     letter-spacing: 0.02em;
 
     color: $button-bg-color;
@@ -140,7 +138,7 @@
     line-height: 1.16;
     letter-spacing: 0.02em;
 
-    color: primery-text-color;
+    color: $primery-text-color;
 }
 
 .mob-contacts-item:not(:last-child) {

@@ -89,11 +89,6 @@ a {
   margin: -1px;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -300,6 +295,8 @@ a {
 }
 
 .hero-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -322,8 +319,12 @@ a {
 @media screen and (min-width: 1200px) {
   .hero-section {
     max-width: 1600px;
-    max-height: 600px;
-    padding: 200px 0;
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -367,6 +368,12 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 
 .button-hero {
   border-radius: 4px;
@@ -400,19 +407,28 @@ a {
   }
 }
 
+.benefits__item {
+  margin: -30px;
+}
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .benefit-item {
   max-width: 450px;
-  margin: 0 0 30px 0;
-}
-@media screen and (max-width: 767px) {
-  .benefit-item:last-child {
-    margin: 0;
-  }
+  margin: 30px;
 }
 @media screen and (min-width: 768px) {
   .benefit-item {
-    margin: 15px;
     width: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -431,6 +447,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 0;
   margin-bottom: 30px;
   height: 120px;
   border-radius: 4px;
@@ -438,11 +455,6 @@ a {
 }
 
 .benefits__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 10px;
   color: #212121;
@@ -539,8 +551,8 @@ a {
 .team__title {
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -548,6 +560,8 @@ a {
 @media screen and (min-width: 1200px) {
   .team__title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
   }
 }
 
@@ -558,12 +572,12 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 15px -15px -15px -15px;
+    margin: 0 -15px -15px -15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__list {
-    margin: 35px -15px -15px -15px;
+    margin: 0 -15px -15px -15px;
   }
 }
 
@@ -673,13 +687,20 @@ a {
 
 .clients-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .clients-list {
@@ -691,12 +712,7 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 15px -15px -15px -15px;
-}
-@media screen and (min-width: 1200px) {
-  .clients-list {
-    margin: 35px -15px -15px -15px;
-  }
+  margin: -15px;
 }
 
 .clients-item {
@@ -1384,11 +1400,11 @@ a {
   border-bottom: 1px solid #2196f3;
 }
 
-.section {
+.section-portfolio {
   padding: 60px 0;
 }
 @media screen and (min-width: 1200px) {
-  .section {
+  .section-portfolio {
     padding: 94px 0;
   }
 }
@@ -1400,9 +1416,6 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 @media screen and (max-width: 767px) {
   .btn {
@@ -1713,7 +1726,7 @@ a {
   display: block;
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.17;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: title-text-color;
 }
@@ -1731,7 +1744,7 @@ a {
 .mob-tel {
   font-weight: 500;
   font-size: 34px;
-  line-height: 1.17;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
@@ -1741,7 +1754,7 @@ a {
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  color: primery-text-color;
+  color: #757575;
 }
 
 .mob-contacts-item:not(:last-child) {
