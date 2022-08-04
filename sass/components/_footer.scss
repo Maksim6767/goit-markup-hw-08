@@ -8,7 +8,6 @@
 }
 
 .footer .container {
-    // display: flex;
 
 @media screen and (min-width: 768px) {
     display: flex;
@@ -17,7 +16,6 @@
     }
     
 @media screen and (min-width: 1200px) {
-    // display: flex;
     align-items: baseline;
     }
 }
@@ -46,7 +44,7 @@
     @media screen and(min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
-} 
+    } 
 }
 
 .footer-logospan {
@@ -59,13 +57,19 @@
 }
 
 .footer-adress {
+    margin-bottom: 8px;
+
+@media screen and(min-width: 1200px) {
     margin-bottom: 9px;
+}
 }
 
 .foot-ad {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    margin-bottom: 8px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -81,31 +85,34 @@
     }
 }
 
-.contacts {
-    // justify-content: flex-end;
-}
-
-.footer-contacts {
-    // margin-bottom: 9px;
-}
-
 .foot-cont {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     font-family: 'Roboto';
+
+    // margin-bottom: 8px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.06em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+
 
     &:hover,
     &:focus {
         color: $button-bg-color;
     }
+}
+
+.footer-contacts {
+    margin-bottom: 8px;
+
+@media screen and(min-width: 1200px) {
+    margin-bottom: 9px;
+}
 }
 
 .footer-contacts:nth-child(3n) {
@@ -191,7 +198,7 @@
 
     text-align: center;
     
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
     width: 450px;
     }
     
@@ -221,10 +228,10 @@
 }
 
 .mailing-input {
-    margin-right: 12px;
+    // margin-right: 12px;
     margin-bottom: 20px;
     padding-left: 16px;
-    min-width: 358px;
+    min-width: 450px;
     height: 50px;
     color: rgba(255, 255, 255, 0.6);
     background-color: transparent;
@@ -240,7 +247,7 @@
     }
 
 @media screen and (min-width: 1200px) {
-        width: 358px;
+        min-width: 358px;
         margin-bottom: 0;
         margin-right: 12px;
     }
