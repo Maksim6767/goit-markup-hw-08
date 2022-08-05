@@ -194,13 +194,7 @@
 /*----------Подпишитесь на рассылку--------------*/
 
 .footer-mailing-list {
-    // margin-left: 93px;
-
     text-align: center;
-    
-@media screen and (max-width: 1199px) {
-    width: 450px;
-    }
     
 @media screen and (min-width: 1200px) {
     text-align: left;
@@ -228,10 +222,8 @@
 }
 
 .mailing-input {
-    // margin-right: 12px;
     margin-bottom: 20px;
     padding-left: 16px;
-    min-width: 450px;
     height: 50px;
     color: rgba(255, 255, 255, 0.6);
     background-color: transparent;
