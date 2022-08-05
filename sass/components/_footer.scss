@@ -123,6 +123,10 @@
 .footer-soc {
     margin-bottom: 60px;
     text-align: center;
+
+@media screen and (min-width: 768px) {
+    padding-top: 12px; 
+    }
     
 @media screen and (min-width: 1200px) {
     text-align: left;
@@ -211,14 +215,15 @@
 
 .mailing-form {
     @media screen and(min-width: 1200px) {
-            display: flex;
-            align-items: center;
-        }
+        display: flex;
+        align-items: center;
+    }
 }
 
 .mailing-input {
     margin-bottom: 20px;
     padding-left: 16px;
+    width: 100%;
     height: 50px;
     color: rgba(255, 255, 255, 0.6);
     background-color: transparent;
@@ -233,7 +238,11 @@
         color: rgba(255, 255, 255, 0.6);
     }
 
-@media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
+        min-width: 450px;    
+    }
+
+    @media screen and (min-width: 1200px) {
         min-width: 358px;
         margin-bottom: 0;
         margin-right: 12px;
