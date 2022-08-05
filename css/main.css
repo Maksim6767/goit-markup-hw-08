@@ -902,11 +902,6 @@ a {
   margin-bottom: 60px;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .footer-soc {
-    padding-top: 12px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-soc {
     text-align: left;
@@ -933,6 +928,11 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .footer-soc-title {
+    padding-top: 12px;
+  }
 }
 
 .footer-soc-item {
@@ -999,6 +999,11 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .mailing-text {
+    padding-top: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {

@@ -123,10 +123,6 @@
 .footer-soc {
     margin-bottom: 60px;
     text-align: center;
-
-@media screen and (min-width: 768px) {
-    padding-top: 12px; 
-    }
     
 @media screen and (min-width: 1200px) {
     text-align: left;
@@ -149,6 +145,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $accent-text-color;
+
+@media screen and(min-width: 768px) {
+     padding-top: 12px;
+    }
 }
 
 .footer-soc-item {
@@ -211,6 +211,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $accent-text-color;
+
+    @media screen and(min-width: 768px) {
+       padding-top: 0;
+    }
 }
 
 .mailing-form {
